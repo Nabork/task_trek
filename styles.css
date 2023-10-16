@@ -1,0 +1,92 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+} 
+body{
+    background-image: linear-gradient(90deg, #242a3a, #131625);
+    min-height: 100vh; 
+}
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 200%;
+    margin-bottom: 30px;
+    margin-top: 180px;
+    color: aliceblue;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px
+}
+input{
+    background-color: black;
+    color: beige;
+    border: 0px solid;
+    border-radius: 7px 0px 0px 7px;
+    padding:5px;
+}
+.todo-btn{
+    padding: 5px;
+    background-color: bisque;
+    border: 0px solid;
+    border-radius: 0px 7px 7px 0px;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+.todo-list{
+    min-width: 30%;
+    list-style: none; 
+
+}
+.todo{
+    background-color: #131625;
+    color: rgb(239, 237, 233);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 5px 3px 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    transition: all 0.5s ease ;
+
+}
+
+ .todo li{
+     flex: 1; 
+} 
+.check-btn, .trash-btn{
+    background-color: bisque;
+    color: #131625;
+    padding: 5px;
+    border: 0px solid;
+    border-radius: 60%;
+    margin-right: 5px;
+    max-height: 25px;
+    max-width: 25px;
+    cursor: pointer;
+}
+
+.todo-item{
+    padding: 5px;
+}
+
+#icon{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+
+}
+.fall{
+    transform: translateY(134px) rotate(20deg);
+    opacity: 0;
+}
